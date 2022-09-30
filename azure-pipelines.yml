@@ -2,7 +2,6 @@ resources:
   repositories:
   - repository: test
     type: github
-    name: test
     ref: 
     endpoint: github
     trigger: none
