@@ -10,9 +10,10 @@ pr:
     include:
     - test/amol
 resources: 
-  repositories:
-  - repository: Test
+  repositories: 
+  - repository: very
     type: GitHub
+    name: Test
     connection: Github
 
 pool:
