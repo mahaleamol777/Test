@@ -1,16 +1,16 @@
-resources:
-  repositories:
-  - repository: test
-    type: GitHub
-    connection: github
-#    source: 
-    pr:
-      branches:
-        include:
-        - main/*
-      paths:
-        include:
-        - amol/*
+trigger: 
+- main
+
+pr: 
+  branches:
+    include:
+    - main
+    exclude:
+    - '*'
+  paths:
+    include:
+    - test/amol
+
 pool:
   vmImage: windows-latest
 
