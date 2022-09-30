@@ -11,7 +11,8 @@ resources:
         include: 
         - main
       paths:
-        include: /amol
+        include: 
+        - amol/*
 
 pool:
   vmImage: windows-latest
