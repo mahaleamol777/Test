@@ -10,7 +10,7 @@ resources:
       branches:
         include: main
       paths:
-        include: test/amol
+        include: /amol
 
 pool:
   vmImage: windows-latest
