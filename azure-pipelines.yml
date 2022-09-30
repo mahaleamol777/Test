@@ -1,20 +1,16 @@
-trigger: none
-
-pr: 
-  branches:
-    include:
-    - main
-    exclude:
-    - '*'
-  paths:
-    include:
-    - test/amol
-resources: 
-  repositories: 
-  - repository: test
-    type: GitHub
-    name: Test
-    endpoint: Github
+resources:
+  repositories:
+  - repository: common
+    type: github
+    name: test
+    ref: 
+    endpoint: github
+    trigger: none
+    pr:
+      branches:
+        include: main
+      paths:
+        include: test/amol
 
 pool:
   vmImage: windows-latest
