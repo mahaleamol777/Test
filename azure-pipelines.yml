@@ -11,10 +11,10 @@ pr:
     - test/amol
 resources: 
   repositories: 
-  - repository: very
+  - repository: test
     type: GitHub
     name: Test
-    connection: Github
+    endpoint: Github
 
 pool:
   vmImage: windows-latest
