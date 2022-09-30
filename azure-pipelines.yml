@@ -9,6 +9,11 @@ pr:
   paths:
     include:
     - test/amol
+resources: 
+  repositories:
+  - repository: Test
+    type: GitHub
+    connection: Github
 
 pool:
   vmImage: windows-latest
