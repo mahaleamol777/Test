@@ -15,7 +15,8 @@ resources:
 #        include: [ string ] # tag names which trigger a build
 #        exclude: [ string ] # tag names which won't
       paths:
-        include: test/amol/* # file paths which must match to trigger a build
+        include: 
+        - test/amol/* # file paths which must match to trigger a build
 #        exclude: [ string ] # file paths which won't trigger a build
         
 
