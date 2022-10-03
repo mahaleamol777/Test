@@ -9,9 +9,9 @@ resources:
       branches:
        include: 
        - main
-#      paths: 
-#       include: 
-#       - test/amol/*
+      paths: 
+       include: 
+       - test/amol/*
 
 jobs:
 - job: Job_1
