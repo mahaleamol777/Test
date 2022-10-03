@@ -1,8 +1,8 @@
 resources:
   repositories:
-  - repository: GitHub  # identifier (A-Z, a-z, 0-9, and underscore)
+  - repository:   # identifier (A-Z, a-z, 0-9, and underscore)
     type: github  # see the following "Type" topic
-    name: test  # repository name (format depends on `type`)
+    name: Test  # repository name (format depends on `type`)
 #    ref: refs/heads/main  # ref name to use; defaults to 'refs/heads/main'
     endpoint: githubconnection  # name of the service connection to use (for types that aren't Azure Repos)
     trigger: none # CI trigger for this repository, no CI trigger if skipped (only works for Azure Repos)
