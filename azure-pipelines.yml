@@ -2,16 +2,15 @@ resources:
   repositories:
   - repository: test
     type: github
-    ref: 
     endpoint: github
     trigger: none
     pr:
       branches:
         include: 
         - main
-      paths:
-        include: 
-        - amol/*
+      # paths:
+      #   include: 
+      #   - amol/*
 
 pool:
   vmImage: windows-latest
