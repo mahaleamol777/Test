@@ -7,9 +7,11 @@ resources:
     trigger: none
     pr: 
       branches:
-       include: main
+       include: 
+       - main
       paths: 
-       include: test/amol/*
+       include: 
+       - test/amol/*
 
 jobs:
 - job: Job_1
