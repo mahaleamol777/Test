@@ -2,7 +2,7 @@ resources:
   repositories:
   - repository: self
     type: github
-    ref: refs/heads/main
+#    ref: refs/heads/main
     endpoint: github-gmail
     trigger: none
     pr: 
