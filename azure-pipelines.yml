@@ -1,6 +1,6 @@
 resources:
   repositories:
-  - repository:   # identifier (A-Z, a-z, 0-9, and underscore)
+  - repository: MyRepo  # identifier (A-Z, a-z, 0-9, and underscore)
     type: github  # see the following "Type" topic
     name: Test  # repository name (format depends on `type`)
 #    ref: refs/heads/main  # ref name to use; defaults to 'refs/heads/main'
