@@ -2,7 +2,7 @@ resources:
   repositories:
   - repository: test
     type: github
-    endpoint: github
+    endpoint: mahaleamol777
     trigger: none
     pr:
       branches:
