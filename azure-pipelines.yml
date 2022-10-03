@@ -8,7 +8,8 @@ resources:
     trigger: none # CI trigger for this repository, no CI trigger if skipped (only works for Azure Repos)
     pr: 
       branches:
-        include: main # branch names which trigger a build
+        include: 
+        - main # branch names which trigger a build
 #        exclude: [ string ] # branch names which won't
 #      tags:
 #        include: [ string ] # tag names which trigger a build
