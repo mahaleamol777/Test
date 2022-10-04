@@ -1,6 +1,7 @@
 resources:
   repositories:
   - repository: self
+    name: test
     type: github
 #    ref: refs/heads/main
     endpoint: github-gmail
