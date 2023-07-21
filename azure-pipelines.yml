@@ -4,7 +4,7 @@ resources:
     name: test
     type: github
 #    ref: refs/heads/main
-    endpoint: github-gmail
+    endpoint: mahaleamol777
     trigger: none
     pr: 
       branches:
