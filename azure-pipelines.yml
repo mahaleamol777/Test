@@ -5,7 +5,9 @@ resources:
     type: github
 #    ref: refs/heads/main
     endpoint: mahaleamol777
-    trigger: none
+    trigger: 
+       - main
+     
     pr: 
       branches:
        include: 
