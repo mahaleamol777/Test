@@ -1,19 +1,30 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
 - main
 
 pool:
-  vmImage: windows-latest
+  vmImage: 'windows-latest'
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+stages:
+- stage: Stage1
+  displayName: "Stage 1 - Sleep for 5 minutes"
+  jobs:
+  - job: SleepJob1
+    displayName: "Job 1 - Sleep"
+    steps:
+    - task: CmdLine@2
+      inputs:
+        script: |
+          sleep 300
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- stage: Stage2
+  displayName: "Stage 2 - Sleep for 5 minutes"
+  dependsOn: Stage1
+  jobs:
+  - job: SleepJob2
+    displayName: "Job 2 - Sleep"
+    steps:
+    - task: CmdLine@2
+      inputs:
+        script: |
+          sleep 300
+
