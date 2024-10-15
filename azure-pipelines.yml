@@ -13,8 +13,7 @@ stages:
           - task: CmdLine@2
             inputs:
               script: |
-                echo "Running Stage 1"
-                timeout /t 300 /nobreak  # Sleeps for 5 minutes (300 seconds)
+                sleep 300
 
   - stage: Stage2
     dependsOn: Stage1
@@ -25,6 +24,5 @@ stages:
           - task: CmdLine@2
             inputs:
               script: |
-                echo "Running Stage 2"
-                timeout /t 300 /nobreak  # Sleeps for 5 minutes (300 seconds)
+                sleep 300
 
