@@ -1,15 +1,30 @@
-
 trigger:
 - main
 
 pool:
   vmImage: windows-latest
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+stages:
+  - stage: Stage1
+    jobs:
+      - job: Job1
+        steps:
+          
+          - task: CmdLine@2
+            inputs:
+              script: |
+                echo "Running Stage 1"
+                timeout /t 300 /nobreak  # Sleeps for 5 minutes (300 seconds)
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+  - stage: Stage2
+    dependsOn: Stage1
+    jobs:
+      - job: Job2
+        steps:
+          
+          - task: CmdLine@2
+            inputs:
+              script: |
+                echo "Running Stage 2"
+                timeout /t 300 /nobreak  # Sleeps for 5 minutes (300 seconds)
+
